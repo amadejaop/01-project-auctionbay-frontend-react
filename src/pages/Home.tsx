@@ -3,7 +3,7 @@ import BoldLink from "../components/BoldLink";
 import Logo from '../assets/images/Logo.png';
 import BlackBgLink from "../components/BlackBgLink";
 import '../assets/styles/Home.css'
-import Auction from '../assets/images/Auctions1.svg'
+import Auction from '../assets/images/Auctions1.png'
 
 export default function Home() {
     return (
@@ -18,8 +18,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="landing-text">
-                <h1>E-auctions made easy!</h1>
-                <p>Simple way for selling your unused products, or getting a deal on product you want!</p>
+                <h1 className="landing-heading">E-auctions made easy!</h1>
+                <p className="landing-paragraph">Simple way for selling your unused products, or <br /> getting a deal on product you want!</p>
                 <YellowBgLink text={"Start bidding"} href={"/login"} />
             </div>
             <img src={Auction} alt="Screenshot from our app" className="landing-image" />

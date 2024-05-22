@@ -1,7 +1,10 @@
 .blackbg-link {
-    background-color: #071015;
-    border-radius: 16px;
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
+	background-color: #071015;
+	border-radius: 16px;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+.blackbg-link:hover {
+	opacity: 0.65;
 }
