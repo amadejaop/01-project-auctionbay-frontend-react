@@ -90,6 +90,7 @@ export default function Signup() {
                 />{" "}
               </label>
               <button
+                type="button"
                 className="empty-btn"
                 onClick={toggleRepeatPasswordVisibility}
               >
