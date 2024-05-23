@@ -1,5 +1,7 @@
 import SideImage from "../components/SideImage";
 import Logo from "../assets/images/Logo.png";
+import "../assets/styles/ForgotPassword.css";
+import Chevron from "../assets/images/Chevron_right.png";
 
 export default function ResetPassword() {
   return (
@@ -28,6 +30,10 @@ export default function ResetPassword() {
                 Reset password
               </button>
             </form>
+            <a href="/login" className="back-link">
+              <img id="chevron" src={Chevron} alt="Arrow pointing left" /> Back
+              to login
+            </a>
           </div>
         </div>
       </div>
