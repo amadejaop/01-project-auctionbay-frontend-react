@@ -1,0 +1,12 @@
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex: 1;
+}
+
+.side-image {
+    max-width: 100%;
+}

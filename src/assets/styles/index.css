@@ -3,6 +3,8 @@ code {
  monospace;
 }
 html, body {
+	background-color: #f6f6f4;
+	box-sizing: border-box;
 	color: #071015;
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,4 +13,17 @@ html, body {
 	min-height: 100vh;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+p {
+	font-weight: 300;
+}
+
+label {
+	font-weight: 300;
 }
