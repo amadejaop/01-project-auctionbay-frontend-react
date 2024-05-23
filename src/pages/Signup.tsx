@@ -2,8 +2,21 @@ import BoldLink from "../components/BoldLink";
 import SideImage from "../components/SideImage";
 import "../assets/styles/Signup.css";
 import Logo from "../assets/images/Logo.png";
+import Eye from "../assets/images/Eye.png";
+import { useState } from "react";
 
 export default function Signup() {
+  const [passwordShown, setPasswordShown] = useState(false);
+  const [repeatPasswordShown, setRepeatPasswordShown] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setPasswordShown(passwordShown ? false : true);
+  };
+
+  const toggleRepeatPasswordVisibility = () => {
+    setRepeatPasswordShown(repeatPasswordShown ? false : true);
+  };
+
   return (
     <>
       <div className="container">
@@ -53,25 +66,35 @@ export default function Signup() {
                 <input
                   placeholder="Placeholder"
                   className="signup-input"
-                  type="password"
+                  type={passwordShown ? "text" : "password"}
                   name="password"
                   id="password"
                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
                   maxLength={15}
-                />
+                />{" "}
               </label>
+              <button className="empty-btn" onClick={togglePasswordVisibility}>
+                <img id="signup-pw-icon" src={Eye} alt="eye icon" />
+              </button>
+
               <label htmlFor="confirmPassword">
                 Repeat password
                 <input
                   placeholder="Placeholder"
                   className="signup-input"
-                  type="password"
+                  type={repeatPasswordShown ? "text" : "password"}
                   name="confirmPassword"
                   id="confirmPassword"
                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
                   maxLength={15}
-                />
+                />{" "}
               </label>
+              <button
+                className="empty-btn"
+                onClick={toggleRepeatPasswordVisibility}
+              >
+                <img id="signup-repeat-pw-icon" src={Eye} alt="eye icon" />
+              </button>
               <button className="yellow-submit-btn" type="submit">
                 Sign up
               </button>
