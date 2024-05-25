@@ -2,6 +2,7 @@ import MyAuctions from "../components/MyAuctions";
 import Bidding from "../components/Bidding";
 import Won from "../components/Won";
 import { useState } from "react";
+import TopNavigation from "../components/TopNavigation";
 
 export default function Profile() {
   const [showBidding, setShowBidding] = useState(false);
@@ -10,6 +11,7 @@ export default function Profile() {
 
   return (
     <>
+      <TopNavigation />
       <h1>profile</h1>
       <button
         onClick={function () {
