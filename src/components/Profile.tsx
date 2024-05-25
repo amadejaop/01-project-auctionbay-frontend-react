@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
+import TopNavigation from "./TopNavigation";
 
 export default function Profile() {
   return (
     <>
-      <h1>Profile</h1>
+      <TopNavigation />
       <Outlet />
     </>
   );

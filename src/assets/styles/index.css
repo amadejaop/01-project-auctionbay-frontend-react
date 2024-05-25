@@ -27,3 +27,10 @@ p {
 label {
 	font-weight: 300;
 }
+
+.yellow-logo {
+    -webkit-clip-path: circle();
+    background-color: #F4FF47;
+    clip-path: circle();
+    padding: 16px;
+}
