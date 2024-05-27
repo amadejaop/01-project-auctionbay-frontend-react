@@ -1,0 +1,103 @@
+.auctions-actions {
+    display: flex;
+
+}
+
+.myauctions-container {
+    display: flex;
+    margin: 0 32px;
+    gap: 16px;
+}
+
+.auction-card {
+    width: 216px;
+    height: 298px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.auction-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auction-card p {
+    margin: 0;
+}
+
+.inprogress-tag {
+    background-color: #F9FF90;
+    font-size: 0.625rem;
+    font-weight: 300;
+    padding: 2px 4px;
+    border-radius: 16px;
+    width: 60px;
+    height: 16px;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.done-tag {
+    background-color: #272D2D;
+    color: white;
+    font-size: 0.625rem;
+    font-weight: 300;
+    padding: 2px 4px;
+    border-radius: 16px;
+    width: 33px;
+    height: 16px;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.winning-tag {
+    background-color: #ADFF90;
+    font-size: 0.625rem;
+    font-weight: 300;
+    padding: 2px 4px;
+    border-radius: 16px;
+    width: 46px;
+    height: 16px;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.outbid-tag {
+    background-color: #FFAA98;
+    font-size: 0.625rem;
+    font-weight: 300;
+    padding: 2px 4px;
+    border-radius: 16px;
+    width: 40px;
+    height: 16px;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.whitetimer-tag {
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 16px;
+    font-weight: 300;
+    font-size: 0.625rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.redtimer-tag {
+    background-color: #FFAA98;
+    padding: 2px 4px;
+    border-radius: 16px;
+    font-weight: 300;
+    font-size: 0.625rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.redtimer-tag > svg,
+.whitetimer-tag > svg {
+    position: relative;
+    top: 1px;
+}
