@@ -1,5 +1,7 @@
 import "../assets/styles/MyAuctions.css";
 import Card from "./Card";
+import Mic from "../assets/images/microphone.jpeg";
+import Chair from "../assets/images/chair.jpeg";
 
 export default function MyAuctions() {
   return (
@@ -11,43 +13,36 @@ export default function MyAuctions() {
           winning={false}
           outbid={false}
           time={"30h"}
-          title={"Item1"}
-          price="12 €"
-          imageUrl={""}
+          title={"Rode vintage microphone"}
+          price="123 €"
+          imageUrl={Mic}
         />
 
-        <Card
-          inProgress={false}
-          done={false}
-          winning={false}
-          outbid={true}
-          time={"30h"}
-          title={"Item1"}
-          price="12 €"
-          imageUrl={""}
-        />
+        {Array.from({ length: 4 }, (_, key) => (
+          <Card
+            inProgress={true}
+            done={false}
+            winning={false}
+            outbid={false}
+            time={"30h"}
+            title={"Old chair"}
+            price="65 €"
+            imageUrl={Chair}
+          />
+        ))}
 
-        <Card
-          inProgress={false}
-          done={false}
-          winning={true}
-          outbid={false}
-          time={"30h"}
-          title={"Item1"}
-          price="12 €"
-          imageUrl={""}
-        />
-
-        <Card
-          inProgress={false}
-          done={true}
-          winning={false}
-          outbid={false}
-          time={"30h"}
-          title={"Item1"}
-          price="12 €"
-          imageUrl={""}
-        />
+        {Array.from({ length: 7 }, (_, key) => (
+          <Card
+            inProgress={false}
+            done={true}
+            winning={false}
+            outbid={false}
+            time={""}
+            title={"Old chair"}
+            price="65 €"
+            imageUrl={Chair}
+          />
+        ))}
       </div>
     </>
   );

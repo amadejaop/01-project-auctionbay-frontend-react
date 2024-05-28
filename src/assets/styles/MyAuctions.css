@@ -1,10 +1,8 @@
-.auctions-actions {
-    display: flex;
 
-}
 
 .myauctions-container {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 32px;
     gap: 16px;
 }
@@ -14,7 +12,7 @@
     height: 298px;
     background-color: white;
     border-radius: 16px;
-    padding: 8px;
+    padding: 8px 4px 4px 4px;
     box-sizing: border-box;
 }
 
@@ -33,6 +31,7 @@
     font-weight: 300;
     padding: 2px 4px;
     border-radius: 16px;
+    margin: 10px;
     width: 60px;
     height: 16px;
     text-align: center;
@@ -100,4 +99,70 @@
 .whitetimer-tag > svg {
     position: relative;
     top: 1px;
+}
+
+.auction-price {
+    font-weight: 500;
+    line-height: 24px;
+    padding: 4px 0 8px 4px;
+}
+
+.delete-btn {
+    border: 1px solid #272D2D;
+    background-color: #fff;
+    width: 48px;
+    height: 40px;
+    border-radius: 16px;
+}
+
+.edit-btn {
+    border: none;
+    background-color: #272D2D;
+    color: #fff;
+    border-radius: 16px;
+    width: 156px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.edit-btn > svg {
+    margin-right: 8px;
+}
+
+.auction-actions {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.auction-actions > button {
+    cursor: pointer;
+}
+
+.auction-title {
+    line-height: 24px;
+    padding: 4px;
+}
+
+.auction-card > img {
+    border-radius: 12px;
+}
+
+.delete-btn:hover > svg {
+    filter: brightness(0) invert(1);
+}
+
+.edit-btn:hover > svg {
+    filter: brightness(0);
+}
+
+.edit-btn:hover {
+    background-color: #fff;
+    border: 1px solid #272D2D;
+    color: #272D2D;
+}
+
+.delete-btn:hover {
+    background-color: #272D2D;
 }
