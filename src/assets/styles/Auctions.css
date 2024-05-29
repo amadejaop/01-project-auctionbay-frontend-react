@@ -1,7 +1,12 @@
 .auctions-title {
     padding: 0 32px;
+    font-size: 2rem;
 }
 
 .auction-card-container {
     margin: -15px 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
 }
