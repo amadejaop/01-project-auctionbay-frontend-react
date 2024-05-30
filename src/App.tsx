@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import ResetPassword from "./pages/ResetPassword";
 import Profile from "./pages/Profile";
 import Auctions from "./pages/Auctions";
+import Auction from "./pages/Auction";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/auctions" element={<Auctions />} />
+          <Route path="/auction" element={<Auction />} />
         </Routes>
       </BrowserRouter>
     </>
