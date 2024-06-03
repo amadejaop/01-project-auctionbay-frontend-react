@@ -1,0 +1,13 @@
+.clock-lg {
+    background-color: #FFAA98;
+    border-radius: 16px;
+    height: 28px;
+    line-height: 25px;
+    margin: 0;
+    text-align: center;
+    width: 69px;
+}
+
+.clock-lg > svg {
+    vertical-align: middle;
+}
