@@ -27,11 +27,15 @@ export default function Auction() {
             Dignissimos molestias asperiores optio ipsam deleniti eum
             reprehenderit possimus, obcaecati nam aliquid aspernatur beatae,
             iure harum vel aperiam pariatur rem enim corporis laboriosam.
-            Tempora veniam assumenda iusto expedita maiores aliquam perferendis,
-            modi facilis, accusamus laborum omnis porro dicta quisquam hic
-            adipisci.
+            Tempora veniam assumenda iusto expedita.
           </p>
-          <form action=""></form>
+          <form action="">
+            <label htmlFor="bid">
+              Bid
+              <input type="number" placeholder="40" />
+            </label>
+            <button type="submit">Place bid</button>
+          </form>
         </div>
         <div className="item-bidding">
           <h3>Bidding history</h3>

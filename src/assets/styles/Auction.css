@@ -35,3 +35,60 @@
     justify-content: space-between;
     height: 28px;
 }
+
+.item-description > h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.item-description > p {
+    margin-top: -10px;
+    margin-bottom: 29px;
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+form > button[type="submit"] {
+    background-color: #F4FF47;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    width: 103px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+form > button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #D0DB33;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    border: 1px solid #DDE9E6;
+    border-radius: 16px;
+    width: 84px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    margin-left: 8px;
+    color: #071015;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1rem;
+}
