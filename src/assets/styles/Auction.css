@@ -28,6 +28,7 @@
     grid-row: 2 / 3;
     background-color: #fff;
     border-radius: 16px;
+    padding: 16px;
 }
 
 .item-bidding-status {
@@ -91,4 +92,36 @@ input[type=number] {
     font-family: "Inter";
     font-weight: 500;
     font-size: 1rem;
+}
+
+.item-bidding > h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.user-bid {
+    border-bottom: 1px solid #EDF4F2;
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+}
+
+.user-info,
+.bid-date-price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-info > img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bid-price {
+    background-color: #F4FF47;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-weight: 600;
+    width: 40px;
 }
