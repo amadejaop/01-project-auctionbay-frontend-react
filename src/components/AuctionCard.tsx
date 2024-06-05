@@ -31,7 +31,7 @@ export default function AuctionCard(props: AuctionCardProps) {
         ) : (
           <Outbid />
         )}
-        {props.whiteTimer ? (
+        {props.done ? null : props.whiteTimer ? (
           <WhiteTimer time={props.time} />
         ) : (
           <RedTimer time={props.time} />
