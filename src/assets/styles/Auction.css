@@ -78,7 +78,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input[type=number] {
+.additem > label > input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
     border: 1px solid #DDE9E6;

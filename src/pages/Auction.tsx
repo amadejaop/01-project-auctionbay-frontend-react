@@ -55,7 +55,7 @@ export default function Auction() {
             iure harum vel aperiam pariatur rem enim corporis laboriosam.
             Tempora veniam assumenda iusto expedita.
           </p>
-          <form action="">
+          <form action="" className="additem">
             <label htmlFor="price">
               Bid
               <input

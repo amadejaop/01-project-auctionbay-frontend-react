@@ -99,10 +99,10 @@
     flex-direction: column;
     gap: 16px;
     height: 129px;
-    left: calc(50% - 100px);
+    left: calc(50% - 102px);
     padding: 16px;
     position: fixed;
-    top: calc(50% - 150px);
+    top: calc(50% - 65px);
     width: 204px;
 }
 
@@ -138,4 +138,82 @@
     background-color: #272D2D;
     color: #fff;
     cursor: pointer;
+}
+
+.addauction-container {
+    width: 533px;
+    height: 647px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 16px;
+    position: fixed;
+    top: calc(50% - 323px);
+    left: calc(50% - 266px);
+    z-index: 999;
+    box-sizing: border-box;
+   
+}
+
+.addauction-container > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.addauction-container > h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 1.438rem;
+    line-height: 27.6px;
+}
+
+.add-img {
+    width: 501px;
+    height: 168px;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F4;
+    box-sizing: border-box;
+    margin: 16px 0;
+}
+
+.price-date {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.price-date > label > input[type=number],
+.price-date > label > input[type=text] {
+    width: 242px;
+}
+
+.addauction-form > label > input,
+.addauction-form > label > textarea {
+    width: 100%;
+    display: block;
+    resize: none;
+}
+
+.addauction-form > button[type=submit] {
+    width: 132px;
+}
+
+.cancel-btn {
+    width: 85px;
+    height: 40px;
+    border-radius: 16px;
+    background-color: #EDF4F2;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cancel-btn:hover {
+    cursor: pointer;
+    background-color: #DDE9E6;
 }
