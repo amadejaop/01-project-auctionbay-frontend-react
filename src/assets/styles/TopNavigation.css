@@ -297,3 +297,18 @@
 .firstlabel {
     margin-top: -8px;
 }
+
+.profilesettings-container {
+    background-color: #fff;
+    width: 533px;
+    height: 404px;
+    border-radius: 16px;
+    position: fixed;
+    top: calc(50% - 202px);
+    left: calc(50% - 266px);
+}
+
+.profilesettings-container > form {
+    display: flex;
+    flex-direction: column;
+}

@@ -8,6 +8,7 @@ import { useState } from "react";
 export default function TopNavigation() {
   const [addAuctionOpen, setAddAuctionOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
+  const [profileSettingsOpen, setProfileSettingsOpen] = useState(false);
 
   function openProfile() {
     setProfileOpen(true);
@@ -22,6 +23,14 @@ export default function TopNavigation() {
 
   function closeAddAuction() {
     setAddAuctionOpen(false);
+  }
+
+  function openProfileSettings() {
+    setProfileSettingsOpen(true);
+  }
+
+  function closeProfileSettings() {
+    setProfileSettingsOpen(false);
   }
 
   return (
@@ -109,7 +118,7 @@ export default function TopNavigation() {
           </button>
           {profileOpen && (
             <div className="profilemodal-container">
-              <button className="white-btn">
+              <button className="white-btn" onClick={openProfileSettings}>
                 <svg
                 width="14"
                 height="14"
@@ -126,6 +135,23 @@ export default function TopNavigation() {
               <button className="bordered-btn" onClick={closeProfile}>Log out</button>
             </div>
           )}
+           {profileSettingsOpen && (
+              <div className="profilesettings-container">
+                <h3>Profile settings</h3>
+                <form action="">
+                  <label htmlFor="settingsName">Name <input type="text" placeholder="Jamal" /></label>
+                  <label htmlFor="settingsSurname">Surname <input type="text" placeholder="Reces" /></label>
+                  <label htmlFor="settingsEmail">Email <input type="email" placeholder="jamal.reces@gmail.com" /></label>
+                  <button type="button">Change password</button>
+                  <button type="button">Change profile picture</button>
+                  <div className="changesettings-btns">
+                    <button type="button" onClick={closeProfileSettings}>Cancel</button>
+                    <button type="submit" onClick={closeProfileSettings}>Save changes</button>
+                  </div>
+                </form>
+
+              </div>
+            )}
         </div>
       </div>
     </>
