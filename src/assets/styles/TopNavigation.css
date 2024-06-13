@@ -164,7 +164,7 @@
     padding: 0;
     font-weight: 700;
     font-size: 1.438rem;
-    line-height: 27.6px;
+    line-height: 1.725rem;
 }
 
 .add-img {
@@ -188,14 +188,40 @@
 
 .price-date > label > input[type=number],
 .price-date > label > input[type=text] {
-    width: 242px;
+    width: 235px;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    border: 1px solid #DDE9E6;
+    border-radius: 16px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #74817F;
+    font-family: "Inter";
+    line-height: 1.5rem;
 }
 
 .addauction-form > label > input,
 .addauction-form > label > textarea {
-    width: 100%;
+    width: 501px;
+    padding: 0;
+    margin: 8px 0 8px 0;
     display: block;
     resize: none;
+    border: 1px solid #DDE9E6;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "Inter";
+    color: #74817F;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+.addauction-form > label > textarea {
+    height: 123px;
 }
 
 .addauction-form > button[type=submit] {
@@ -216,4 +242,58 @@
 .cancel-btn:hover {
     cursor: pointer;
     background-color: #DDE9E6;
+}
+
+.add-img > button {
+    background-color: transparent;
+    border: 1px solid #272D2D;
+    padding: 8px 16px;
+    border-radius: 16px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Inter";
+}
+
+.add-img > button:hover {
+    background-color: #272D2D;
+    cursor: pointer;
+    color: #fff;
+}
+
+.addauction-form > label,
+.price-date > label {
+    line-height: 1.5rem;
+    margin-bottom: -1px;
+}
+
+.price-date > label > input[type=number] {
+    margin-top: 8px;
+}
+
+.formbuttons {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: -7px;
+}
+
+.formbuttons > button[type=submit] {
+    border: none;
+    border-radius: 16px;
+    background-color: #F4FF47;
+    width: 132px;
+    height: 40px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.formbuttons > button[type=submit]:hover {
+    background-color: #D0DB33;
+    cursor: pointer;
+}
+
+.firstlabel {
+    margin-top: -8px;
 }

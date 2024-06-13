@@ -88,17 +88,19 @@ export default function TopNavigation() {
             <div className="addauction-container">
               <h3>Add auction</h3>
               <form action="" className="addauction-form">
-              <div className="add-img">
-                <button>Add image</button>
-              </div>
-              <label htmlFor="title">Title<input type="text" placeholder="Write item name here" /></label>
-              <label htmlFor="description">Description<textarea name="description" id="description">Write description here...</textarea></label>
-              <div className="price-date">
-              <label htmlFor="startingPrice">Starting price<input type="number" placeholder="price" /></label>
-              <label htmlFor="endDate">End date<input type="text" placeholder="dd.mm.yyyy" /></label>
-              </div>
-              <button onClick={closeAddAuction} className="cancel-btn">Cancel</button>
-              <button type="submit">Start auction</button>
+                <div className="add-img">
+                  <button>Add image</button>
+                </div>
+                <label htmlFor="title" className="firstlabel">Title<input type="text" placeholder="Write item name here" /></label>
+                <label htmlFor="description">Description<textarea name="description" id="description">Write description here...</textarea></label>
+                <div className="price-date">
+                  <label htmlFor="startingPrice">Starting price<input type="number" placeholder="price" /></label>
+                  <label htmlFor="endDate">End date<input type="text" placeholder="dd.mm.yyyy" /></label>
+                </div>
+                <div className="formbuttons">
+                  <button onClick={closeAddAuction} className="cancel-btn">Cancel</button>
+                  <button type="submit">Start auction</button>
+                </div>
               </form>
             </div>
           )}
