@@ -9,6 +9,7 @@ export default function TopNavigation() {
   const [addAuctionOpen, setAddAuctionOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const [profileSettingsOpen, setProfileSettingsOpen] = useState(false);
+  const [changePasswordOpen, setChangePasswordOpen] = useState(false);
 
   function openProfile() {
     setProfileOpen(true);
@@ -31,6 +32,14 @@ export default function TopNavigation() {
 
   function closeProfileSettings() {
     setProfileSettingsOpen(false);
+  }
+
+  function openChangePassword() {
+    setChangePasswordOpen(true);
+  }
+
+  function closeChangePassword() {
+    setChangePasswordOpen(false);
   }
 
   return (
@@ -144,14 +153,27 @@ export default function TopNavigation() {
                     <label htmlFor="settingsSurname">Surname <input type="text" value="Reces" /></label>
                   </div>
                   <label htmlFor="settingsEmail">Email <input type="email" value="jamal.reces@gmail.com" /></label>
-                  <button type="button">Change password</button>
+                  <button type="button" onClick={openChangePassword}>Change password</button>
                   <button type="button">Change profile picture</button>
                   <div className="changesettings-btns">
                     <button type="button" onClick={closeProfileSettings}>Cancel</button>
                     <button type="submit" onClick={closeProfileSettings}>Save changes</button>
                   </div>
                 </form>
-
+              </div>
+            )}
+            {changePasswordOpen && (
+              <div className="changepw-container">
+                <h3>Change password</h3>
+                <form action="">
+                  <label htmlFor="changepwCurrent">Current password <input type="password" /></label>
+                  <label htmlFor="changepwNew">New password <input type="password" /></label>
+                  <label htmlFor="changepwRepeat">Repeat new password <input type="password" /></label>
+                  <div className="changepw-btns">
+                    <button type="button" onClick={closeChangePassword}>Cancel</button>
+                    <button type="submit" onClick={closeChangePassword}>Save changes</button>
+                  </div>
+                </form>
               </div>
             )}
         </div>

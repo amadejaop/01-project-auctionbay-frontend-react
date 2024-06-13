@@ -412,3 +412,20 @@
     cursor: pointer;
     background-color: #D0DB33;
 }
+
+.changepw-container {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 533px;
+    height: 414px;
+    position: fixed;
+    top: calc(50% - 207px);
+    left: calc(50% - 266px);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.changepw-container > form {
+    display: flex;
+    flex-direction: column;
+}
