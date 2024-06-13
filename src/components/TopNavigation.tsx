@@ -139,9 +139,11 @@ export default function TopNavigation() {
               <div className="profilesettings-container">
                 <h3>Profile settings</h3>
                 <form action="">
-                  <label htmlFor="settingsName">Name <input type="text" placeholder="Jamal" /></label>
-                  <label htmlFor="settingsSurname">Surname <input type="text" placeholder="Reces" /></label>
-                  <label htmlFor="settingsEmail">Email <input type="email" placeholder="jamal.reces@gmail.com" /></label>
+                  <div className="firstlast">
+                    <label htmlFor="settingsName">Name <input type="text" value="Jamal" /></label>
+                    <label htmlFor="settingsSurname">Surname <input type="text" value="Reces" /></label>
+                  </div>
+                  <label htmlFor="settingsEmail">Email <input type="email" value="jamal.reces@gmail.com" /></label>
                   <button type="button">Change password</button>
                   <button type="button">Change profile picture</button>
                   <div className="changesettings-btns">

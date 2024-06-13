@@ -306,9 +306,109 @@
     position: fixed;
     top: calc(50% - 202px);
     left: calc(50% - 266px);
+    padding: 16px;
+    box-sizing: border-box;
 }
 
 .profilesettings-container > form {
     display: flex;
     flex-direction: column;
+}
+
+.profilesettings-container > h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.438rem;
+    font-weight: 700;
+    line-height: 1.725rem;
+    margin-bottom: 32px;
+}
+
+.firstlast {
+    display: flex;
+    gap: 16px;
+    width: 501px;
+}
+
+.firstlast > label > input {
+    width: 242px;
+    border: 1px solid #DDE9E6;
+    border-radius: 16px;
+    padding: 8px 16px;
+    color: #071015;
+    font-weight: 500;
+    font-family: "Inter";
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.profilesettings-container > form > label > input[type=email] {
+    width: 100%;
+    border: 1px solid #DDE9E6;
+    border-radius: 16px;
+    padding: 8px 16px;
+    color: #071015;
+    font-weight: 500;
+    font-family: "Inter";
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+.profilesettings-container > form > button[type=button] {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #272D2D;
+    border: none;
+    background-color: transparent;
+    align-self: flex-start;
+    line-height: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.profilesettings-container > form > button[type=button]:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.changesettings-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.changesettings-btns > button[type=button] {
+    width: 85px;
+    height: 40px;
+    background-color: #EDF4F2;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.changesettings-btns > button[type=button]:hover {
+    cursor: pointer;
+    background-color: #DDE9E6;
+}
+
+.changesettings-btns > button[type=submit] {
+    background-color: #F4FF47;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 500;
+    width: 139px;
+    height: 40px;
+}
+
+.changesettings-btns > button[type=submit]:hover {
+    cursor: pointer;
+    background-color: #D0DB33;
 }
