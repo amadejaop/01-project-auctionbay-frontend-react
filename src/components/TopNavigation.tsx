@@ -4,12 +4,14 @@ import ProfilePicture from "../assets/images/Avatar.png";
 import "../assets/styles/TopNavigation.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import Avatar from "../assets/images/Avatar.png"
 
 export default function TopNavigation() {
   const [addAuctionOpen, setAddAuctionOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const [profileSettingsOpen, setProfileSettingsOpen] = useState(false);
   const [changePasswordOpen, setChangePasswordOpen] = useState(false);
+  const [changeProfileImg, setChangeProfileImg] = useState(false);
 
   function openProfile() {
     setProfileOpen(true);
@@ -42,6 +44,15 @@ export default function TopNavigation() {
 
   function closeChangePassword() {
     setChangePasswordOpen(false);
+  }
+
+  function openChangeProfileImg() {
+    setChangeProfileImg(true);
+    closeProfileSettings()
+  }
+
+  function closeChangeProfileImg() {
+    setChangeProfileImg(false);
   }
 
   return (
@@ -156,7 +167,7 @@ export default function TopNavigation() {
                   </div>
                   <label htmlFor="settingsEmail">Email <input type="email" value="jamal.reces@gmail.com" /></label>
                   <button type="button" onClick={openChangePassword}>Change password</button>
-                  <button type="button">Change profile picture</button>
+                  <button type="button" onClick={openChangeProfileImg}>Change profile picture</button>
                   <div className="changesettings-btns">
                     <button type="button" onClick={closeProfileSettings}>Cancel</button>
                     <button type="submit" onClick={closeProfileSettings}>Save changes</button>
@@ -190,7 +201,19 @@ export default function TopNavigation() {
                 </form>
               </div>
             )}
-            
+            {changeProfileImg && (
+              <div className="changeprofileimg-container">
+                <h3>Change profile picture</h3>
+                <div>
+                  <img src={Avatar} alt="My current avatar" />
+                  <button>Upload new picture</button>
+                </div>
+                <div className="changeprofileimg-btns">
+                  <button type="button" onClick={closeChangeProfileImg}>Cancel</button>
+                  <button type="submit" onClick={closeChangeProfileImg}>Save changes</button>
+                </div>
+              </div>
+            )}
         </div>
       </div>
     </>

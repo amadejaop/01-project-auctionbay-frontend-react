@@ -499,3 +499,16 @@
     cursor: pointer;
     background-color: #D0DB33;
 }
+
+.changeprofileimg-container {
+    position: fixed;
+    width: 533px;
+    height: 276px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    top: calc(50% - 138px);
+    left: calc(50% - 266px);
+    z-index: 999;
+    box-sizing: border-box;
+}
