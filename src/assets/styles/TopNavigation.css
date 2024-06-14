@@ -429,3 +429,73 @@
     display: flex;
     flex-direction: column;
 }
+
+.changepw-container > h3 {
+    margin: 0 0 32px 0;
+    padding: 0;
+    font-size: 1.438rem;
+    font-weight: 700;
+    line-height: 1.725rem;
+}
+.changepw-container > form > label > div {
+    position: relative;
+    margin: 8px 0 16px 0;
+}
+
+.changepw-container > form > label > div > svg {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+}
+
+.changepw-container > form > label > div > input {
+    width: 501px;
+    border: 1px solid #DDE9E6;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 40px;
+    margin: 0;
+    color: #74817F;
+}
+
+.changepw-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.changepw-btns > button[type=button] {
+    width: 85px;
+    height: 40px;
+    background-color: #EDF4F2;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.changepw-btns > button[type=button]:hover {
+    cursor: pointer;
+    background-color: #DDE9E6;
+}
+
+.changepw-btns > button[type=submit] {
+    background-color: #F4FF47;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 500;
+    width: 139px;
+    height: 40px;
+}
+
+.changepw-btns > button[type=submit]:hover {
+    cursor: pointer;
+    background-color: #D0DB33;
+}
