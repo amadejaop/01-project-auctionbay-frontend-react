@@ -104,6 +104,7 @@
     position: fixed;
     top: calc(50% - 65px);
     width: 204px;
+    z-index: 99;
 }
 
 .profilemodal-container > .white-btn {
@@ -149,7 +150,7 @@
     position: fixed;
     top: calc(50% - 323px);
     left: calc(50% - 266px);
-    z-index: 999;
+    z-index: 99;
     box-sizing: border-box;
    
 }
@@ -308,6 +309,7 @@
     left: calc(50% - 266px);
     padding: 16px;
     box-sizing: border-box;
+    z-index: 99;
 }
 
 .profilesettings-container > form {
@@ -423,6 +425,7 @@
     left: calc(50% - 266px);
     padding: 16px;
     box-sizing: border-box;
+    z-index: 99;
 }
 
 .changepw-container > form {
@@ -509,7 +512,7 @@
     padding: 16px;
     top: calc(50% - 138px);
     left: calc(50% - 266px);
-    z-index: 999;
+    z-index: 99;
     box-sizing: border-box;
 }
 
