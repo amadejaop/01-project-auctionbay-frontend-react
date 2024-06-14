@@ -204,8 +204,8 @@ export default function TopNavigation() {
             {changeProfileImg && (
               <div className="changeprofileimg-container">
                 <h3>Change profile picture</h3>
-                <div>
-                  <img src={Avatar} alt="My current avatar" />
+                <div className="change-avatar">
+                  <img src={Avatar} alt="My current avatar" height={56} width={56} />
                   <button>Upload new picture</button>
                 </div>
                 <div className="changeprofileimg-btns">

@@ -512,3 +512,78 @@
     z-index: 999;
     box-sizing: border-box;
 }
+
+.changeprofileimg-container > h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.438rem;
+    font-weight: 700;
+    line-height: 1.725rem;
+    margin-bottom: 32px;
+}
+
+.change-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.change-avatar > button {
+    width: 181px;
+    height: 40px;
+    border: 1px solid #272D2D;
+    border-radius: 16px;
+    background-color: #fff;
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.change-avatar > button:hover {
+    background-color: #272D2D;
+    color: #fff;
+    cursor: pointer;
+}
+
+.changeprofileimg-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: 33px;
+}
+
+.changeprofileimg-btns > button[type=button] {
+    width: 85px;
+    height: 40px;
+    background-color: #EDF4F2;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.changeprofileimg-btns > button[type=button]:hover {
+    cursor: pointer;
+    background-color: #DDE9E6;
+}
+
+.changeprofileimg-btns > button[type=submit] {
+    background-color: #F4FF47;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 500;
+    width: 139px;
+    height: 40px;
+}
+
+.changeprofileimg-btns > button[type=submit]:hover {
+    cursor: pointer;
+    background-color: #D0DB33;
+}
