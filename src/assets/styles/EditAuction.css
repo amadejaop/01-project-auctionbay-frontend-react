@@ -1,0 +1,50 @@
+.editauction-container {
+    position: fixed;
+    top: calc(50% - 323px);
+    left: calc(50% - 266px);
+    width: 533px;
+    height: 647px;
+    background-color: #fff;
+    z-index: 99;
+    border-radius: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.editauction-container > h3 {
+    font-size: 1.438rem;
+    line-height: 1.725rem;
+    margin: 0 0 16px 0;
+}
+
+.changeimg {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.changeimg > img {
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.changeimg > svg {
+    background-color: #272D2D;
+    padding: 14px 18px;
+    border-radius: 16px;
+    width: 10px;
+    height: 12px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.editauction-container > label > input,
+.editauction-container > label > div > input {
+    width: 501px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #DDE9E6;
+    border-radius: 16px;
+    padding: 8px 16px;
+
+}

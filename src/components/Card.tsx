@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Done from "./tags/Done";
 import InProgress from "./tags/InProgress";
 import Outbid from "./tags/Outbid";
 import RedTimer from "./tags/RedTimer";
 import WhiteTimer from "./tags/WhiteTimer";
 import Winning from "./tags/Winning";
+import "../assets/styles/EditAuction.css"
+import Mic from "../assets/images/microphone.jpeg"
 
 interface CardProps {
   inProgress: boolean;
@@ -17,6 +20,16 @@ interface CardProps {
 }
 
 export default function Card(props: CardProps) {
+  const [editAuction, setEditAuction] = useState(false);
+
+  function openEditAuction() {
+    setEditAuction(true);
+  }
+
+  function closeEditAuction() {
+    setEditAuction(false);
+  }
+
   return (
     <div className="auction-card">
       <div className="auction-status">
@@ -59,7 +72,7 @@ export default function Card(props: CardProps) {
               />
             </svg>
           </button>
-          <button type="button" className="edit-btn">
+          <button type="button" className="edit-btn" onClick={openEditAuction}>
             <svg
               width="12"
               height="12"
@@ -74,6 +87,24 @@ export default function Card(props: CardProps) {
             </svg>
             Edit
           </button>
+        </div>
+      )}
+      {editAuction && (
+        <div className="editauction-container">
+          <h3>Edit Auction</h3>
+          <div className="changeimg">
+            <img src={Mic} alt="auction item" width={501} height={168} />
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.00016 10.6667C1.00016 11.4 1.60016 12 2.3335 12H7.66683C8.40016 12 9.00016 11.4 9.00016 10.6667V2.66667H1.00016V10.6667ZM2.3335 4H7.66683V10.6667H2.3335V4ZM7.3335 0.666667L6.66683 0H3.3335L2.66683 0.666667H0.333496V2H9.66683V0.666667H7.3335Z" fill="white"/>
+            </svg>
+          </div>
+          <label htmlFor="editTitle">Title <input type="text" /></label>
+          <label htmlFor="editDescription">Description <input type="text" name="" id="" /></label>
+          <label htmlFor="editEndDate">End date <div className="enddate-input"><input type="text" /></div></label>
+          <div className="editauction-btns">
+            <button type="button" onClick={closeEditAuction}>Discard changes</button>
+            <button type="submit" onClick={closeEditAuction}>Edit auction</button>
+          </div>
         </div>
       )}
     </div>
