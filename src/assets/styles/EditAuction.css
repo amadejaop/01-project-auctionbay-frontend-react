@@ -46,5 +46,78 @@
     border: 1px solid #DDE9E6;
     border-radius: 16px;
     padding: 8px 16px;
+    font-family: "Inter";
+    font-weight: 500;
+    color: #071015;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin: 10px 0 17px 0;
+}
 
+.editauction-container > label > div {
+    position: relative;
+}
+
+.editauction-container > label > div > svg {
+    position: absolute;
+    top: 22px;
+    right: 16px;
+}
+
+.editauction-container > label > textarea {
+    width: 501px;
+    height: 123px;
+    resize: none;
+    border: 1px solid #DDE9E6;
+    border-radius: 16px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #071015;
+    margin: 10px 0 17px 0;
+}
+
+.editauction-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.editauction-btns > button[type=button] {
+    background-color: #EDF4F2;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1rem;
+    width: 160px;
+    height: 40px;
+}
+
+.editauction-btns > button[type=button]:hover {
+    cursor: pointer;
+    background-color: #DDE9E6;
+}
+
+.editauction-btns > button[type=submit] {
+    background-color: #272D2D;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1rem;
+    width: 125px;
+    height: 40px;
+    color: #fff;
+}
+
+.editauction-btns > button[type=submit]:hover {
+    cursor: pointer;
+    color: #071015;
+    background-color: #fff;
+    border: 1px solid #071015;
 }

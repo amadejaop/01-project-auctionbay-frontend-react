@@ -98,9 +98,13 @@ export default function Card(props: CardProps) {
               <path d="M1.00016 10.6667C1.00016 11.4 1.60016 12 2.3335 12H7.66683C8.40016 12 9.00016 11.4 9.00016 10.6667V2.66667H1.00016V10.6667ZM2.3335 4H7.66683V10.6667H2.3335V4ZM7.3335 0.666667L6.66683 0H3.3335L2.66683 0.666667H0.333496V2H9.66683V0.666667H7.3335Z" fill="white"/>
             </svg>
           </div>
-          <label htmlFor="editTitle">Title <input type="text" /></label>
-          <label htmlFor="editDescription">Description <input type="text" name="" id="" /></label>
-          <label htmlFor="editEndDate">End date <div className="enddate-input"><input type="text" /></div></label>
+          <label htmlFor="editTitle">Title <input type="text" value="Rode vintage microphone MH55" /></label>
+          <label htmlFor="editDescription">Description <textarea>Used only for one production.. comes in original box, very nice and vintage microphone with all the new features.</textarea></label>
+          <label htmlFor="editEndDate">End date <div className="enddate-input"><input type="text" value="23.9.2023" />
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.82683 4.16666C9.04683 3.38666 8.02683 2.99333 7.00016 2.99333V6.99333L4.1735 9.81999C5.7335 11.38 8.26683 11.38 9.8335 9.81999C11.3935 8.25999 11.3935 5.72666 9.82683 4.16666ZM7.00016 0.32666C3.32016 0.32666 0.333496 3.31333 0.333496 6.99333C0.333496 10.6733 3.32016 13.66 7.00016 13.66C10.6802 13.66 13.6668 10.6733 13.6668 6.99333C13.6668 3.31333 10.6802 0.32666 7.00016 0.32666ZM7.00016 12.3267C4.0535 12.3267 1.66683 9.93999 1.66683 6.99333C1.66683 4.04666 4.0535 1.65999 7.00016 1.65999C9.94683 1.65999 12.3335 4.04666 12.3335 6.99333C12.3335 9.93999 9.94683 12.3267 7.00016 12.3267Z" fill="#071015"/>
+          </svg>
+          </div></label>
           <div className="editauction-btns">
             <button type="button" onClick={closeEditAuction}>Discard changes</button>
             <button type="submit" onClick={closeEditAuction}>Edit auction</button>
