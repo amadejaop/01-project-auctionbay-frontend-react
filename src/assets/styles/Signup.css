@@ -52,10 +52,9 @@ input::placeholder {
 
 .empty-btn {
     border: none;
-
 }
 
-.side-text {
+.signup > .side-text {
     -ms-flex-align: center;
     -ms-flex-direction: column;
     -webkit-box-align: center;
@@ -151,16 +150,15 @@ input::placeholder {
     cursor: pointer;
 }
 
-#signup-pw-icon {
-    right: 62px;
-    top: 59.4%;
+#signup-pw-icon,
+#signup-repeat-pw-icon {
+    position: absolute;
+    top: 40px;
+    right: 20px;
     opacity: 0.5;
     z-index: 99;
 }
 
-#signup-repeat-pw-icon {
-    right: 62px;
-    top: 68.2%;
-    opacity: 0.5;
-    z-index: 99;
+.signup-form > div {
+    position: relative;
 }

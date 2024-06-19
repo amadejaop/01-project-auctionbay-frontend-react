@@ -1,10 +1,11 @@
 .forgotten-pw {
-    float: right;
-    margin: 0 10px 16px 0;
+    align-self: flex-end;
+    margin: -25px 10px 16px 0;
     font-size: 0.75rem;
     font-weight: 300;
     color: #74817F;
     text-decoration: none;
+    z-index: 99;
 }
 
 .login {
@@ -35,14 +36,42 @@
     padding: 64px 32px;
 }
 
+.login > .side-text {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    align-items: center;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+}
+
 #login-pw-icon {
     position: absolute;
-    right: 62px;
-    top: 58.9%;
+    right: 20px;
+    top: 40px;
     opacity: 0.5;
     z-index: 99;
 }
 
 #login-pw-icon:hover {
     cursor: pointer;
+}
+
+.side-text > form {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    
+}
+
+.side-text > form > div {
+    position: relative;
+}
+
+.side-text > form > button[type=submit] {
+    width: 100%;
 }

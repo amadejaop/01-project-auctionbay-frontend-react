@@ -31,24 +31,26 @@ export default function Login() {
                   id="email"
                 />
               </label>
-              <label htmlFor="password">
-                Password
-                <input
-                  placeholder="Placeholder"
-                  className="signup-input"
-                  type={loginPasswordShown ? "text" : "password"}
-                  name="password"
-                  id="password"
-                  required
-                />{" "}
-              </label>
-              <button
-                type="button"
-                className="empty-btn"
-                onClick={toggleLoginPasswordVisibility}
-              >
-                <img id="login-pw-icon" src={Eye} alt="eye icon" />
-              </button>
+              <div>
+                <label htmlFor="password">
+                  Password
+                  <input
+                    placeholder="Placeholder"
+                    className="signup-input"
+                    type={loginPasswordShown ? "text" : "password"}
+                    name="password"
+                    id="password"
+                    required
+                  />{" "}
+                </label>
+                <button
+                  type="button"
+                  className="empty-btn"
+                  onClick={toggleLoginPasswordVisibility}
+                >
+                  <img id="login-pw-icon" src={Eye} alt="eye icon" />
+                </button>
+              </div>
               <a href="/reset-password" className="forgotten-pw">
                 Forgot password?
               </a>

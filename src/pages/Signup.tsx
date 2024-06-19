@@ -26,7 +26,7 @@ export default function Signup() {
           <div className="side-text">
             <h2>Hello!</h2>
             <p className="signup-para">Please enter your details</p>
-            <form action="post">
+            <form action="post" className="signup-form">
               <div className="twocol-form">
                 <label htmlFor="name">
                   Name
@@ -59,43 +59,50 @@ export default function Signup() {
                   type="email"
                   name="email"
                   id="email"
+                  required
                 />
               </label>
-              <label htmlFor="password">
-                Password
-                <input
-                  placeholder="Placeholder"
-                  className="signup-input"
-                  type={passwordShown ? "text" : "password"}
-                  name="password"
-                  id="password"
-                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
-                  maxLength={15}
-                />{" "}
-              </label>
-              <button className="empty-btn" onClick={togglePasswordVisibility}>
-                <img id="signup-pw-icon" src={Eye} alt="eye icon" />
-              </button>
+              <div>
+                <label htmlFor="password">
+                  Password
+                  <input
+                    placeholder="Placeholder"
+                    className="signup-input"
+                    type={passwordShown ? "text" : "password"}
+                    name="password"
+                    id="password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                    maxLength={15}
+                    required
+                  />{" "}
+                </label>
+                <button type="button" className="empty-btn" onClick={togglePasswordVisibility}>
+                  <img id="signup-pw-icon" src={Eye} alt="eye icon" />
+                </button>
+              </div>
 
-              <label htmlFor="confirmPassword">
-                Repeat password
-                <input
-                  placeholder="Placeholder"
-                  className="signup-input"
-                  type={repeatPasswordShown ? "text" : "password"}
-                  name="confirmPassword"
-                  id="confirmPassword"
-                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
-                  maxLength={15}
-                />{" "}
-              </label>
-              <button
-                type="button"
-                className="empty-btn"
-                onClick={toggleRepeatPasswordVisibility}
-              >
-                <img id="signup-repeat-pw-icon" src={Eye} alt="eye icon" />
-              </button>
+              <div>
+                <label htmlFor="confirmPassword">
+                  Repeat password
+                  <input
+                    placeholder="Placeholder"
+                    className="signup-input"
+                    type={repeatPasswordShown ? "text" : "password"}
+                    name="confirmPassword"
+                    id="confirmPassword"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                    maxLength={15}
+                    required
+                  />{" "}
+                </label>
+                <button
+                  type="button"
+                  className="empty-btn"
+                  onClick={toggleRepeatPasswordVisibility}
+                >
+                  <img id="signup-repeat-pw-icon" src={Eye} alt="eye icon" />
+                </button>
+              </div>
               <button className="yellow-submit-btn" type="submit">
                 Sign up
               </button>

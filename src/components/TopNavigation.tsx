@@ -44,6 +44,7 @@ export default function TopNavigation() {
 
   function closeChangePassword() {
     setChangePasswordOpen(false);
+    openProfileSettings();
   }
 
   function openChangeProfileImg() {
@@ -53,6 +54,7 @@ export default function TopNavigation() {
 
   function closeChangeProfileImg() {
     setChangeProfileImg(false);
+    openProfileSettings();
   }
 
   return (
