@@ -167,3 +167,28 @@
 .delete-btn:hover {
     background-color: #272D2D;
 }
+
+@media screen and (max-width: 528px) {
+    .auction-card {
+        width: 100%;
+    }  
+    
+    .auction-card > img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .edit-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .myauctions-container {
+        justify-content: center;
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+}
