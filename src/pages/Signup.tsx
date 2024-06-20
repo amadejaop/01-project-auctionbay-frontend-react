@@ -3,7 +3,7 @@ import SideImage from "../components/SideImage";
 import "../assets/styles/Signup.css";
 import Logo from "../assets/images/Logo.png";
 import Eye from "../assets/images/Eye.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Signup() {
   const [passwordShown, setPasswordShown] = useState(false);
@@ -17,10 +17,20 @@ export default function Signup() {
     setRepeatPasswordShown(repeatPasswordShown ? false : true);
   };
 
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 750;
+  useEffect(() => {
+   const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
   return (
     <>
       <div className="container">
-        <SideImage />
+        {(width > breakpoint) ? <SideImage /> : null}        
         <div className="signup">
           <img className="yellow-logo" src={Logo} alt="Company logo" />
           <div className="side-text">

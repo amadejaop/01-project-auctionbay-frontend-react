@@ -162,3 +162,19 @@ input::placeholder {
 .signup-form > div {
     position: relative;
 }
+
+@media screen and (max-width: 750px) {
+    .container {
+        height: 100dvh;
+    }
+
+    .signup {
+        max-width: 96%;
+        padding: 32px 16px;
+    }
+
+    .side-text > form {
+        width: 100%;
+        align-self: center;
+    }
+}
