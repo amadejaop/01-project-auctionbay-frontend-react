@@ -2,12 +2,23 @@ import SideImage from "../components/SideImage";
 import Logo from "../assets/images/Logo.png";
 import "../assets/styles/ForgotPassword.css";
 import Chevron from "../assets/images/Chevron_right.png";
+import { useEffect, useState } from "react";
 
 export default function ResetPassword() {
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 750;
+  useEffect(() => {
+   const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
   return (
     <>
       <div className="container">
-        <SideImage />
+        {(width > breakpoint) ? <SideImage /> : null}        
         <div className="pw-section">
           <img className="yellow-logo" src={Logo} alt="Company logo" />
           <div className="inner-section">
