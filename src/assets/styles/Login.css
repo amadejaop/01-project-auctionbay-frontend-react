@@ -75,3 +75,19 @@
 .side-text > form > button[type=submit] {
     width: 100%;
 }
+
+@media screen and (max-width: 750px) {
+    .container {
+        height: 100dvh;
+    }
+
+    .login {
+        max-width: 96%;
+        padding: 32px 16px;
+    }
+
+    .side-text > form {
+        width: 100%;
+        align-self: center;
+    }
+}

@@ -1,6 +1,6 @@
 import SideImage from "../components/SideImage";
 import Logo from "../assets/images/Logo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Eye from "../assets/images/Eye.png";
 import BoldLink from "../components/BoldLink";
 import "../assets/styles/Login.css";
@@ -11,10 +11,20 @@ export default function Login() {
     setLoginPasswordShown(loginPasswordShown ? false : true);
   };
 
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 750;
+  useEffect(() => {
+   const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
   return (
     <>
       <div className="container">
-        <SideImage />
+      {(width > breakpoint) ? <SideImage /> : null}
         <div className="login">
           <img className="yellow-logo" src={Logo} alt="Company logo" />
           <div className="side-text">
