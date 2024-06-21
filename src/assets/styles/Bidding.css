@@ -4,3 +4,9 @@
     margin: 0 32px;
     gap: 16px;
 }
+
+@media screen and (max-width: 528px) {
+    .bidding-container {
+        margin: 0 16px;
+    }
+}
