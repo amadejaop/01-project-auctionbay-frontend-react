@@ -98,4 +98,13 @@
     .profile-nav {
         max-width: 90%;
     }
+
+    .hello-title {
+        padding: 0 16px;
+        margin-bottom: 0;
+    }
+
+    .card-container {
+        display: none;
+    }
 }

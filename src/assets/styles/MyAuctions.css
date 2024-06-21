@@ -181,6 +181,10 @@
     .edit-btn {
         width: 100%;
     }
+
+    .myauctions-container {
+        margin: 0 16px;
+    }
 }
 
 @media screen and (max-width: 1460px) {
