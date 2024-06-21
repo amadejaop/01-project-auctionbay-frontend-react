@@ -10,3 +10,13 @@
     flex-wrap: wrap;
     gap: 16px;
 }
+
+@media screen and (max-width: 528px) {
+    .auction-card-container {
+        margin: -15px 16px 16px 16px;
+    }
+
+    .auctions-title {
+        padding: 0 16px;
+    }
+}

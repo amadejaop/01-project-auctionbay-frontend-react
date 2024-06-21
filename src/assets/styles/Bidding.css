@@ -7,6 +7,6 @@
 
 @media screen and (max-width: 528px) {
     .bidding-container {
-        margin: 0 16px;
+        margin: 0 16px 16px 16px;
     }
 }
