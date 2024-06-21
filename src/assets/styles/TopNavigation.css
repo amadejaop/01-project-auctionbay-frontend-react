@@ -590,3 +590,34 @@
     cursor: pointer;
     background-color: #D0DB33;
 }
+
+@media screen and (max-width: 560px) {
+    .topbar {
+        height: 80px;
+        padding: 16px;
+    }
+
+    .plus-icon {
+        padding: 13px;
+    }
+
+    .nav-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .left-side {
+        gap: 16px;
+    }
+
+    .left-nav > li > a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .yellow-logo {
+        padding: 12px;
+        width: 24px;
+        height: 24px;
+    }
+}

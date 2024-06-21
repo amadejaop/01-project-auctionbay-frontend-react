@@ -3,7 +3,7 @@ import PlusImage from "../assets/images/Vector.png";
 import ProfilePicture from "../assets/images/Avatar.png";
 import "../assets/styles/TopNavigation.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Avatar from "../assets/images/Avatar.png"
 
 export default function TopNavigation() {
@@ -57,6 +57,16 @@ export default function TopNavigation() {
     openProfileSettings();
   }
 
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 750;
+  useEffect(() => {
+   const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
   return (
     <>
       <div className="topbar">
@@ -84,7 +94,7 @@ export default function TopNavigation() {
                       fill="#000000"
                     />
                   </svg>
-                  Auctions
+                  {(width > breakpoint) ? "Auctions" : ""}
                 </NavLink>
               </li>
               <li>
@@ -101,7 +111,7 @@ export default function TopNavigation() {
                       fill="#000000"
                     />
                   </svg>
-                  Profile
+                  {(width > breakpoint) ? "Profile" : ""}
                 </NavLink>
               </li>
             </ul>
@@ -138,7 +148,7 @@ export default function TopNavigation() {
             </div>
           )}
           <button onClick={openProfile}>
-            <img src={ProfilePicture} alt="Avatar" width={56} height={56} />
+            <img src={ProfilePicture} alt="Avatar" width={56} height={56} className="nav-avatar" />
           </button>
           {profileOpen && (
             <div className="profilemodal-container">
