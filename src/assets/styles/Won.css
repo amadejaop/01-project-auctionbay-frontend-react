@@ -4,3 +4,9 @@
     margin: 0 32px;
     gap: 16px;
 }
+
+@media screen and (max-width: 528px) {
+    .won-container {
+        margin: 0 16px;;
+    }
+}
