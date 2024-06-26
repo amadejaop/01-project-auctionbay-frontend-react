@@ -125,3 +125,29 @@ input::-webkit-inner-spin-button {
     font-weight: 600;
     width: 40px;
 }
+
+@media screen and (max-width: 700px) {
+    .item-container {
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        margin: 16px;
+        gap: 16px;
+    }
+    .item-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1435px) {
+    .item-container {
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        margin: 16px;
+        gap: 16px;
+    }
+    .item-image {
+        width: 100%;
+    }
+}
