@@ -126,6 +126,10 @@ input::-webkit-inner-spin-button {
     width: 40px;
 }
 
+.mobile-info {
+    display: none;
+}
+
 @media screen and (max-width: 700px) {
     .item-container {
         display: flex;
@@ -151,5 +155,30 @@ input::-webkit-inner-spin-button {
     .item-image {
         width: 100%;
         height: auto;
+    }
+
+    .mobile-info {
+        display: flex;
+        flex-direction: column;
+        height: 48px;
+    }
+    
+    .mobile-info > p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-info > p:nth-child(2) {
+        color: #74817F;
+    }
+
+    .bid-date {
+        display: none;
+    }
+
+    .bid-username {
+        display: none;
     }
 }

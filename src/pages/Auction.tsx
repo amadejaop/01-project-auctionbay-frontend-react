@@ -79,6 +79,10 @@ export default function Auction() {
               <div className="user-info">
                 <img src={User} alt="user avatar" width={32} height={32} />
                 <p className="bid-username">Jamal Reces</p>
+                <div className="mobile-info">
+                  <p>Jamal Reces</p>
+                  <p>{dateNow}</p>
+                </div>
               </div>
               <div className="bid-date-price">
                 <p className="bid-date">{dateNow}</p>
@@ -91,6 +95,10 @@ export default function Auction() {
             <div className="user-info">
               <img src={User1} alt="user avatar" width={32} height={32} />
               <p className="bid-username">Joanes Boyl</p>
+              <div className="mobile-info">
+                <p>Joanes Boyl</p>
+                <p>14:31 22.6.2023</p>
+              </div>
             </div>
             <div className="bid-date-price">
               <p className="bid-date">14:31 22.6.2023</p>
@@ -102,6 +110,10 @@ export default function Auction() {
             <div className="user-info">
               <img src={User2} alt="user avatar" width={32} height={32} />
               <p className="bid-username">Bigi Smols</p>
+              <div className="mobile-info">
+                <p>Bigi Smols</p>
+                <p>14:31 22.6.2023</p>
+              </div>
             </div>
             <div className="bid-date-price">
               <p className="bid-date">14:31 22.6.2023</p>
