@@ -81,7 +81,7 @@ export default function Auctions() {
           price="40 €"
           imageUrl={Mouse}
         />
-        <AuctionCard
+        <a href="/auction"><AuctionCard
           inProgress={false}
           done={false}
           winning={true}
@@ -91,7 +91,7 @@ export default function Auctions() {
           title="Old wooden chair"
           price="65 €"
           imageUrl={Chair}
-        />
+        /></a>
         <AuctionCard
           inProgress={true}
           done={false}
