@@ -130,12 +130,13 @@ input::-webkit-inner-spin-button {
     .item-container {
         display: flex;
         flex-direction: column;
-        width: 92%;
+        max-width: 92%;
         margin: 16px;
         gap: 16px;
     }
     .item-image {
         width: 100%;
+        height: auto;
     }
 }
 
@@ -149,5 +150,6 @@ input::-webkit-inner-spin-button {
     }
     .item-image {
         width: 100%;
+        height: auto;
     }
 }
