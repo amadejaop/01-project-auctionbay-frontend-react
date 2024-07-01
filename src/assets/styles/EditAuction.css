@@ -121,3 +121,22 @@
     background-color: #fff;
     border: 1px solid #071015;
 }
+
+@media screen and (max-width: 560px) {
+    .editauction-container {
+        width: 328px;
+        left: calc(50% - 164px);
+    }
+
+    .editauction-container > label > input,
+    .editauction-container > label > textarea, 
+    .editauction-container > label > div > input,
+    .changeimg > img {
+        width: 296px;
+    }
+
+    .editauction-btns > button[type=button],
+    .editauction-btns > button[type=submit] {
+        font-size: 0.975rem;
+    }
+}
