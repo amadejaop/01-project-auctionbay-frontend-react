@@ -648,5 +648,23 @@
         left: calc(50% - 164px);
     }
 
-    
+    .addauction-container {
+        width: 328px;
+        left: calc(50% - 164px);
+    }
+
+    .add-img,
+    .addauction-form > label > input,
+    .addauction-form > label > textarea {
+        width: 296px;
+    }
+
+    .price-date {
+        width: 296px;
+    }
+
+    .price-date > label > input[type=number],
+    .price-date > label > input[type=text] {
+        width: 140px;
+    }
 }
