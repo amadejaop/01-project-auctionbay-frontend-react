@@ -187,8 +187,22 @@
     gap: 16px;
 }
 
-.price-date > label > input[type=number],
-.price-date > label > input[type=text] {
+.price-date > label > div {
+    position: relative;
+}
+
+.price-date > label > div > svg {
+    position: absolute;
+    right: 15px;
+    top: 23px;
+}
+
+.price-date > label > div > input[type=number] {
+    margin-top: 8px;
+}
+
+.price-date > label > div > input[type=number],
+.price-date > label > div > input[type=text] {
     width: 235px;
     -moz-appearance: textfield;
     appearance: textfield;
@@ -653,6 +667,8 @@
         left: calc(50% - 164px);
     }
 
+    
+
     .add-img,
     .addauction-form > label > input,
     .addauction-form > label > textarea {
@@ -663,8 +679,8 @@
         width: 296px;
     }
 
-    .price-date > label > input[type=number],
-    .price-date > label > input[type=text] {
+    .price-date > label > div > input[type=number],
+    .price-date > label > div > input[type=text] {
         width: 140px;
     }
 }
