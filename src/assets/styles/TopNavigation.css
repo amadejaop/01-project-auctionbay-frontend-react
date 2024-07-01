@@ -620,4 +620,18 @@
         width: 24px;
         height: 24px;
     }
+
+    .profilesettings-container {
+        width: 328px;
+        position: absolute;
+        left: calc(50% - 164px);
+    }
+
+    .firstlast {
+        width: 296px;
+    }
+
+    .firstlast > label > input {
+        width: 140px;
+    }
 }
