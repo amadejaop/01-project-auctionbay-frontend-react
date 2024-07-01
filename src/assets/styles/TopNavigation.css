@@ -642,4 +642,11 @@
     .changepw-container > form > label > div > input {
         width: 296px;
     }
+
+    .changeprofileimg-container {
+        width: 328px;
+        left: calc(50% - 164px);
+    }
+
+    
 }
